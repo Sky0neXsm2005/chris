@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The History of Christmas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>The History of Christmas</h1>
+    <p id="time-until-christmas"></p>
+</header>
+
+<main>
+    <div class="box-container">
+        <div class="box" onclick="toggleContent(0)"><img src="/img/santa.png" alt="" width="60%">
+            <h2 class="box-title">1. Origins of Christmas</h2>
+        </div>
+        <div class="box" onclick="toggleContent(1)"><img src="/img/tree.png" alt="" width="60%">
+            <h2 class="box-title">2. The Evolution of Christmas Traditions</h2>
+        </div>
+        <div class="box" onclick="toggleContent(2)"><img src="/img/gift.png" alt="" width="60%">
+            <h2 class="box-title">3. Global Christmas Celebrations</h2>
+        </div>
+    </div>
+
+    <!-- Background blur overlay -->
+    <div id="background-overlay" class="background-overlay"></div>
+
+    <div id="content-box" class="content-box">
+        <div id="content-text" class="content-text">
+            <!-- The content will be dynamically inserted here -->
+        </div>
+        <button class="close-btn" onclick="closeContent()">Close</button>
+    </div>
+
+    <!-- Music Player -->
+    <audio id="audio-player" src="/music/OIIAOIIA Cat Sings Jingle Bells Rock.mp3" preload="auto"></audio>
+    <button id="play-pause-btn" class="play-pause-btn" onclick="togglePlayPause()">Play Music</button>
+
+</main>
+
+<footer>
+    <p>© 2024 Surachat Nadidankang</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;  /* Light cream color */
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    background-image: url('snowflakes.png');  /* Optional: Add a snowflake background image */
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Header with Christmas colors */
+header {
+    background-color: #b22222;  /* Deep red for Christmas theme */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #d4af37;  /* Gold border */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Box styles (to fit the Christmas theme) */
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.box {
+    background-color: #27ae60;  /* Green background for the boxes */
+    padding: 15px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect on boxes */
+.box:hover {
+    background-color: #e74c3c;  /* Red when hovered for extra festive effect */
+}
+
+/* Content box for text */
+.content-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 800px;
+    z-index: 1001;
+    text-align: center;
+    border: 2px solid #d4af37;  /* Gold border around content */
+}
+
+/* Close button style */
+.close-btn {
+    background-color: #e74c3c;  /* Red close button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Background overlay with blur effect */
+.background-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+/* Play/Pause Button with festive style */
+.play-pause-btn {
+    background-color: #f39c12;  /* Gold button for play/pause */
+    color: white;
+    border: none;
+    padding: 25px 30px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect on Play/Pause button */
+.play-pause-btn:hover {
+    background-color: #f1c40f;
+}
+
+/* Footer with Christmas theme */
+footer {
+    background-color: #b22222;  /* Deep red footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px solid #d4af37;  /* Gold border */
+}
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    top: -20px;
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 0.8;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
